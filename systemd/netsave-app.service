@@ -1,0 +1,13 @@
+[Unit]
+Description=NetSave Configuration App Service
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/NetSave_Config/python
+ExecStart=/var/www/NetSave_Config/python/venv/bin/python app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

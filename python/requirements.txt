@@ -1,0 +1,7 @@
+Flask
+schedule
+pymysql
+mysql-connector-python
+paramiko
+netmiko
+requests

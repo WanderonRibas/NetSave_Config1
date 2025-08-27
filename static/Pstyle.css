@@ -1,0 +1,159 @@
+/* ====== Layout Principal ====== */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+/* ====== Botões ====== */
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+.btn-danger {
+    background: #dc3545;
+}
+
+.btn-danger:hover {
+    background: #a71d2a;
+}
+
+.btn-green {
+    background: #28a745;
+}
+
+.btn-green:hover {
+    background: #1e7e34;
+}
+
+.btn-blue {
+    background: #17a2b8;
+}
+
+.btn-blue:hover {
+    background: #117a8b;
+}
+
+.top-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.agendar-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* ====== Tabela ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed; /* Adicionado para controlar a largura das colunas */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    overflow: hidden; /* Evita que o conteúdo transborde */
+    text-overflow: ellipsis; /* Adicionado para mostrar "..." se o texto for muito longo */
+}
+
+th {
+    background: #eee;
+}
+
+/* Largura das colunas da tabela */
+th:nth-child(1), td:nth-child(1) { width: 5%; } /* Status */
+th:nth-child(2), td:nth-child(2) { width: 20%; } /* Hostname - Aumentado */
+th:nth-child(3), td:nth-child(3) { width: 15%; } /* IP */
+th:nth-child(4), td:nth-child(4) { width: 10%; } /* Porta SSH - Diminuído */
+th:nth-child(5), td:nth-child(5) { width: 10%; } /* Usuário */
+th:nth-child(6), td:nth-child(6) { width: 10%; } /* Senha */
+th:nth-child(7), td:nth-child(7) { width: 15%; } /* Vendor */
+th:nth-child(8), td:nth-child(8) { width: 15%; } /* Ações */
+
+/* Inputs dentro da tabela */
+table input[type="text"],
+table input[type="password"],
+table select {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* ====== Status com Bolinha ====== */
+.status-bolinha {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+}
+
+.verde {
+    background-color: green;
+}
+
+.vermelha {
+    background-color: red;
+}
+
+/* ====== Modal ====== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
