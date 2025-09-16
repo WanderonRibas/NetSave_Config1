@@ -149,13 +149,3 @@ def backup_vsol(host, port, username, password, caminho_backup):
         if client:
             client.close()
             print(f"[*] Conexão com {host} fechada.")
-
-# --- Exemplo de uso ---
-if __name__ == "__main__":
-    host = "172.16.212.2"
-    port = 50022
-    username = "userbkp"
-    password = "Master77415611@#"
-    caminho_backup = 'C:/Users/Wanderson/Documents/Projeto1/Projeto.Sistema.Backup/Backups'
-
-    backup_vsol(host, port, username, password, caminho_backup)
